@@ -35,6 +35,72 @@
       "artifacts": [
         "HelloWorld"
       ]
+    },
+    "C:\\Users\\cheeh\\Documents\\GitHub\\taichee-thenextgen-hackathon\\hardhat\\contracts\\Listing.sol": {
+      "lastModificationDate": 1665220202833,
+      "contentHash": "0bd3271d5947594f43d4aa84782457cf",
+      "sourceName": "contracts/Listing.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.17"
+      ],
+      "artifacts": [
+        "Listing"
+      ]
+    },
+    "C:\\Users\\cheeh\\Documents\\GitHub\\taichee-thenextgen-hackathon\\hardhat\\contracts\\Market.sol": {
+      "lastModificationDate": 1665220467950,
+      "contentHash": "4acd5fd8b6a70f2e3612d82540f9b8bf",
+      "sourceName": "contracts/Market.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
     }
   }
 }
