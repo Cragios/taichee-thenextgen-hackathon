@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/taichee-thenextgen-hackathon/static/css/main.55066992.css",
-    "main.js": "/taichee-thenextgen-hackathon/static/js/main.d7290f72.js",
+    "main.js": "/taichee-thenextgen-hackathon/static/js/main.294a2b35.js",
     "static/js/787.0c1fbfd9.chunk.js": "/taichee-thenextgen-hackathon/static/js/787.0c1fbfd9.chunk.js",
     "index.html": "/taichee-thenextgen-hackathon/index.html",
     "main.55066992.css.map": "/taichee-thenextgen-hackathon/static/css/main.55066992.css.map",
-    "main.d7290f72.js.map": "/taichee-thenextgen-hackathon/static/js/main.d7290f72.js.map",
+    "main.294a2b35.js.map": "/taichee-thenextgen-hackathon/static/js/main.294a2b35.js.map",
     "787.0c1fbfd9.chunk.js.map": "/taichee-thenextgen-hackathon/static/js/787.0c1fbfd9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55066992.css",
-    "static/js/main.d7290f72.js"
+    "static/js/main.294a2b35.js"
   ]
 }
