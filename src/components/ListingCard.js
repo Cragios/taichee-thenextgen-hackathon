@@ -10,7 +10,7 @@ function ListingCard({ index, data }) {
     await market.withdrawFromListing(index, account);
   };
   return (
-    <div className=" border rounded-md p-8 mx-24 my-8 ">
+    <div className=" border rounded-md p-8 mx-24 my-8">
       <h1 className="font-medium leading-tight text-3xl">{data.identifier}</h1>
       <p>
         <span style={{ fontWeight: "bold" }}>Lister:</span> {data.host}
@@ -25,10 +25,9 @@ function ListingCard({ index, data }) {
         <p>
           <span style={{ fontWeight: "bold" }}>Participants:</span>
         </p>
-        {data.participants ? data.participants : null}
         {data.participants
           ? data.participants.map((participant) => {
-              <p>{participant}</p>;
+              return <p>{participant}</p>;
             })
           : null}
       </div>

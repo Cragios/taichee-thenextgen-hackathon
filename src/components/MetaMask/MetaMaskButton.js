@@ -27,9 +27,13 @@ function MetaMaskButton() {
   return (
     <div>
       {active ? (
-        <button onClick={disconnect}>Disconnect from MetaMask</button>
+        <button onClick={disconnect} className="px-4 py-2 bg-sky-100 rounded-md m-4">
+          Disconnect from MetaMask
+        </button>
       ) : (
-        <button onClick={connect}>Connect to MetaMask</button>
+        <button onClick={connect} className="px-4 py-2 bg-sky-100 rounded-md m-4">
+          Connect to MetaMask
+        </button>
       )}
     </div>
   );

@@ -7,7 +7,7 @@ function MetaMaskCard() {
   const [balance, setBalance] = useState("Pending...");
 
   return (
-    <div style={{ margin: "8px", padding: "12px", border: "1px solid rgba(0, 0, 0, 1)", borderRadius: "12px" }}>
+    <div className=" border rounded-md p-8 mx-24 my-8 ">
       <h2>MetaMask</h2>
       {active ? (
         <Fragment>
