@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { injected } from "../utils/connectors";
-import { helloWorld } from "../utils/interact";
 import Pages from "./Pages/Pages";
 
 function Web3App() {
@@ -15,13 +14,13 @@ function Web3App() {
     persistWalletConnection();
   }, []);
 
-  useEffect(() => {
-    const logCurrentMessage = async () => {
-      const message = await helloWorld.loadCurrentMessage();
-      console.log(message);
-    };
-    logCurrentMessage();
-  }, []);
+  // useEffect(() => {
+  //   const logCurrentMessage = async () => {
+  //     const message = await helloWorld.loadCurrentMessage();
+  //     console.log(message);
+  //   };
+  //   logCurrentMessage();
+  // }, []);
 
   return <Pages />;
 }
