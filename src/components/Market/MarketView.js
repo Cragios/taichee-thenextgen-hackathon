@@ -7,6 +7,7 @@ function MarketView() {
   useEffect(() => {
     const getMarketData = async () => {
       const data = await market.getAllListingData();
+      console.log(data);
       localStorage.setItem("marketData", JSON.stringify(data));
       setMarketData(data);
     };
@@ -17,7 +18,7 @@ function MarketView() {
   return (
     <div>
       {marketData.map((data, index) => {
-        return <ListingCard index={index} data={data} />;
+        return <ListingCard key={index} index={index} data={data} />;
       })}
     </div>
   );

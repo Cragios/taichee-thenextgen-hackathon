@@ -32,13 +32,13 @@ export const market = {
     //sign the transaction
     marketContract.methods.createListing(identifier, account, target, price).send({ from: account });
   },
-  participateInListing: async (key, account) => {
+  participateInListing: async (key, account, value) => {
     if (!window.ethereum || account === null) {
       alert("💡 Connect your Metamask wallet to update the message on the blockchain.");
       return;
     }
     //sign the transaction
-    marketContract.methods.participateInListing(key).send({ from: account });
+    marketContract.methods.participateInListing(key).send({ from: account, value: value });
   },
   withdrawFromListing: async (key, account) => {
     if (!window.ethereum || account === null) {

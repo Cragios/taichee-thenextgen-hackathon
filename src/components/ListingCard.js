@@ -4,7 +4,7 @@ import { market } from "../utils/interact";
 function ListingCard({ index, data }) {
   const { account } = useWeb3React();
   const handleParticipate = async (index) => {
-    await market.participateInListing(index, account);
+    await market.participateInListing(index, account, data.price);
   };
   const handleWithdraw = async (index) => {
     await market.withdrawFromListing(index, account);
@@ -21,12 +21,17 @@ function ListingCard({ index, data }) {
       <p>
         <span style={{ fontWeight: "bold" }}>price:</span> {data.price}
       </p>
-      <p>
-        <span style={{ fontWeight: "bold" }}>Participants:</span>
-        {data.participants.map((participant) => {
-          <p>{participant}</p>;
-        })}
-      </p>
+      <div>
+        <p>
+          <span style={{ fontWeight: "bold" }}>Participants:</span>
+        </p>
+        {data.participants ? data.participants : null}
+        {data.participants
+          ? data.participants.map((participant) => {
+              <p>{participant}</p>;
+            })
+          : null}
+      </div>
       <button
         onClick={() => {
           handleParticipate(index);
